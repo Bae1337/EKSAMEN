@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Tracker</title>
+    <script src="/JS/MealTracker.js"></script>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/mealtracker.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+
+    <div id="krop">
+        <div id="overskrift">
+            <div>
+                <h1>Meal Tracker</h1>
+            </div>
+            <div>
+                <button id="blå" onclick="skiftSideTilRegistrerVand()">+</button>
+                <button id="gul" onclick="skiftSideTilRegistrerEnkeltIngrediens()">+</button>
+                <button id="grøn" onclick="skiftSideTilRegistrerMåltid()">+</button>
+            </div>
+        </div>
+
+
+        <div id="table">
+            <table id="MealTrackerTable">
+                <thead>
+                    <th>Måltid</th>
+                    <th>Dato</th>
+                    <th>Vægt</th>
+                    <th>Næringsindhold</th>
+                    <th>Lokation</th>
+                    <th>Rediger / Slet</th>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-header">
+            <h2>Rediger</h2>
+            <div>
+                <button id="luk" class="button" onclick="lukPopup()">Luk</button>
+                <button id="opdater" class="button" onclick="RedigerRegistreringAfMåltid()">Opdater</button>
+            </div>
+        </div>
+
+        <div id="RegistrerMåltid">
+            <label for="måltidSelector">Måltider</label>
+            <select name="Måltider" id="måltidSelector">
+            </select>
+            <input type="number" id="vægt" placeholder="Vægt (g)">
+        </div>
+    </div>
+
+    <div id="popupIngrediens" class="popup">
+        <div class="popup-header">
+            <h2>Rediger</h2>
+            <div>
+                <button id="lukIngrediens" class="button" onclick="lukPopupIngrediens()">Luk</button>
+                <button id="opdaterIngrediens" class="button" onclick="RedigerRegisteringAfInkeltIngrediens()">Opdater</button>
+            </div>
+        </div>
+
+        <div id="RegistrerIngrediens">
+            <input type="text" id="søg" placeholder="Søg efter madvare">
+            <div id="dropdown" class="dropdown-box"></div>
+            <input type="number" id="vægtIngrediens" placeholder="Vægt (g)">
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

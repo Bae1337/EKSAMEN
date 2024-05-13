@@ -1,0 +1,92 @@
+#TilføjBox {
+    background-color: #DEF6D8;
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#TilføjBoxOverskrift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#tilføjIngrediens {
+    display: flex;
+    flex-direction: column;
+}
+
+#NavnPåOpskrift input,
+#Ingredienser input,
+#vægt,
+#tilføjIng {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #91C789;
+    border-radius: 5px;
+}
+
+#tilføjIng {
+    width: 150px;
+}
+
+button {
+    width: 100px;
+    background-color: #91C789;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tilføjIng:hover {
+    background-color: #7fa978;
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 10%; 
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #91C789;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 100; 
+    border-radius: 0 0 5px 5px;
+}
+
+#dropdown div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#dropdown div:hover {
+    background-color: #f4f4f4;
+}
+
+#liste {
+    margin-top: 20px;
+}
+
+#ingTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ingTable th,
+#ingTable td {
+    border: 1px solid #91C789;
+    padding: 8px;
+    text-align: left;
+}
+
+#ingTable th {
+    background-color: #91C789;
+    color: white;
+}

@@ -1,0 +1,72 @@
+#krop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: 2px solid #76a478; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto; 
+    background-color: #f4f9f4; 
+}
+
+#overskrift {
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+#overskrift h1 {
+    color: #569BD5;
+    font-weight: bold;
+}
+
+#table {
+    width: 100%; 
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%;
+    margin-top: 10px; 
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #c8e1d1; 
+}
+
+th {
+    background-color: #76a478; 
+    color: white; 
+    font-size: 16px;
+}
+
+td {
+    background-color: #eafaf1; 
+    vertical-align: middle;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background-color: #c8e1d1; 
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+select {
+    flex-grow: 1;
+    padding: 8px;
+    border: 2px solid #91C789;
+    border-radius: 5px;
+}

@@ -1,0 +1,205 @@
+#krop {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: #99D9DE;
+    align-self: center;
+    width: 75%;
+    border-radius: 15px;
+    border-width: 2px;
+    margin-top: 100px;
+}
+
+#overskrift {
+    display: flex;
+    width: 99%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blå, #grøn, #gul {
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 100%;
+    border: 0px;
+    font-size: large;
+}
+
+#blå {
+    background-color: #569BD5;
+}
+
+#grøn {
+    background-color: #91c789;
+}
+
+#gul {
+    background-color: #dbc501;
+}
+
+#table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    align-items: center;
+    border-spacing: 0 10px;
+    border-collapse: separate;
+    margin-bottom: 10px;
+}
+
+td {
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #DEF6D8;
+    padding: 10px 5px 10px 5px;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+
+table td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+table td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+table tr td:first-child p:nth-of-type(2) {
+    font-size: smaller;
+    color: gray;
+}
+
+table td:nth-child(4) {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 50px);
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+}
+
+#blue, #orange, #lys, #rød {
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+#blue {
+    background-color: #569BD5;
+}
+
+#orange {
+    background-color: #FFAB40;
+}
+
+#lys {
+    background-color: #99D9De;
+}
+
+#rød {
+    background-color: #F29A8A;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #367B37;
+}
+
+
+.waterRow {
+    background-color: lightblue; 
+}
+
+
+.popup {
+    display: none;
+    background-color: #DEF6D8;
+    border: 2px solid #91C789;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 1000;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-width: 600px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    box-sizing: border-box; 
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #91C789;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#luk {
+    margin-left: auto;
+}
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    width: 40%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+    top: 85%;
+    margin-left: 35px;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-box div {
+    padding: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dropdown-box div:hover {
+    background-color: #f4f4f4;
+}

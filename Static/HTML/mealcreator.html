@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Creator</title>
+    <script src="/JS/MealCreator.js"></script>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/mealcreator.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+    <div id="krop">
+        <div id="overskrift">
+            <div>
+                <h1>Meal Creator</h1>
+            </div>
+            <div>
+                <button class="button" onclick="skiftSideTilFoodInspector()">Få oplysninger på Ingredienser</button>
+                <button id="grøn" onclick="skiftSideTilTilføjMåltid()">+</button>
+            </div>
+        </div>
+
+
+        <div id="table">
+            <table id="mealTable">
+                <thead>
+                    <th>ID</th>
+                    <th>Navn</th>
+                    <th>Total Kcal pr. 100g</th>
+                    <th># Ingredienser</th>
+                    <th>Vis ingrediens / Slet</th>
+                </thead>
+            </table>
+        </div>
+        
+
+
+
+    </div>
+
+    <div id="popup">
+        <div id="popOverskrift">
+            <h2>Information om Opskrift</h2>
+            <button id="luk" class="button" onclick="lukPopup()">Luk</button>
+        </div>
+
+        <div id="liste">
+            <p>Ingredienser: </p>
+
+            <table id="infTable">
+                <thead>
+                    <th>Navn</th>
+                    <th>vægt</th>
+                    <th>Energi(Kcal)</th>
+                    <th>Protein</th>
+                    <th>Fedt</th>
+                    <th>Fibre</th>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+#tracker {
+    background-color: #e0f7fa; 
+    border: 2px solid #3bacd6;
+    border-radius: 15px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 50px auto;
+}
+
+#tilføj {
+    background-color: #3bacd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#tilføj:hover {
+    background-color: #3297be;
+}
+
+#trackerOverskrift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+#tilføjMeal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 2px solid #3bacd6; 
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #3bacd6;
+}

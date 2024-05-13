@@ -1,0 +1,140 @@
+#krop {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: #99D9DE;
+    align-self: center;
+    width: 70%;
+    border-radius: 15px;
+    border-width: 2px;
+    margin-top: 100px;
+}
+
+#overskrift {
+    display: flex;
+    width: 99%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blå, #grøn {
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 100%;
+    border: 0px;
+    font-size: large;
+}
+
+#blå {
+    background-color: #569BD5;
+}
+
+#grøn {
+    background-color: #91c789;
+}
+
+#table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mealTable {
+    width: 100%;
+    align-items: center;
+    border-spacing: 0 10px;
+    border-collapse: separate;
+    margin-bottom: 10px;
+}
+
+#mealTable td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+    background-color: #DEF6D8;
+}
+
+
+#mealTable table td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#mealTable table td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#mealTable tr {
+    margin-bottom: 10px;
+}
+
+
+input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#mealTable .waterRow {
+    background-color: lightblue; 
+}
+
+#popup {
+    display: none;
+    background-color: #DEF6D8;
+    border: 2px solid #91C789;
+    border-radius: 15px;
+    position: fixed; 
+    z-index: 1000; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 50%; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    padding: 20px; 
+}
+
+#popOverskrift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#liste {
+    width: 100%; 
+    overflow: auto; 
+    margin-bottom: 10px;
+}
+
+#infTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#infTable th, #infTable td {
+    border: 1px solid #91C789; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+#infTable th {
+    background-color: #91C789; 
+    color: white;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #367B37;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Creator</title>
+    <script src="/JS/TilfojMaltid.js"></script>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/TilfojMaltid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+
+    <div id="TilføjBox">
+        <div id="TilføjBoxOverskrift">
+            <h2>Tilføj opskrift</h2>
+            <button id="tilføj" class="button" onclick="TilføjMåltid()">Tilføj</button>
+        </div>
+        <div id="tilføjIngrediens">
+            <div id="NavnPåOpskrift">
+                <input type="text" id="navn" placeholder="Navn på opskrift">                
+            </div>
+            <div id="Ingredienser">
+                <input type="text" id="søg" placeholder="Søg Efter Ingredienser">
+                <div id="dropdown" class="dropdown-box"></div>
+                <input type="number" id="vægt" placeholder="Vægt (g)">
+                <button id="tilføjIng" class="button" onclick="TilføjIngredienserTilArray()">Tilføj Ingrediens</button>
+            </div>
+        </div>
+
+
+        <div id="liste">
+            <p>Ingredienser: </p>
+
+            <table id="ingTable">
+                <thead>
+                    <th>Navn</th>
+                    <th>Vægt</th>
+                    <th>Delete</th>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

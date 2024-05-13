@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    background-color: #DEF6D8;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    margin-left: 30px;
+    width: 130%;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    padding-right: 20px;
+}
+
+#links a {
+    color: #334D5C;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+#links a:hover {
+    color: #91C789;
+}
+
+h1, h2, h3, p {
+    margin: 10px 0;
+}

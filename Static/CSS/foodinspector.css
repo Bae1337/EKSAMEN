@@ -1,0 +1,131 @@
+
+#krop {
+    align-self: center;
+    width: 70%;
+    border-radius: 15px;
+    border-width: 2px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas:    "top top"
+                            "left right"; 
+}
+
+#top, #right, #left {
+    border: 2px solid;
+    border-color: #91C789;
+    background-color: #DEF6D8;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+}
+
+#topOverskrift {
+    margin-left: 220px;
+}
+
+#topUnderskrift {
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-self: center;
+    width: 70%;
+}
+
+#leftOverskrift {
+    margin-left: 30px;
+}
+
+.spec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    margin-left: 30px;
+    background-color: #91C789;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#leftOverskrift, #rightOverskrift, #img {
+    margin-left: 30px;
+}
+
+
+.borderS {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    background-color: #91C789;
+}
+
+
+#load {
+    margin-left: 30px;
+}
+
+
+.søgefelt {
+    position: relative;
+    align-self: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+#søg {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #91C789;
+    border-radius: 5px;
+}
+
+#søg-button {
+    margin-left: 10px;
+    background-color: #91C789;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#søg-button:hover {
+    background-color: #7fa978;
+}
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-box div {
+    padding: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dropdown-box div:hover {
+    background-color: #f4f4f4;
+}
+

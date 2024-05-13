@@ -1,0 +1,66 @@
+#Krop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#aktivitet, #basalstofskifte {
+    background-color: #DEF6D8;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+label, #tekstForResultat, p {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #91C789;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #91C789;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+button:hover {
+    background-color: #7fa978;
+}
+
+#resultat, #basalstofskifteIndput {
+    background-color: #e6eef2;
+    color: #333;
+    font-weight: bold;
+}
+
+#tekstForResultat, #basalstofskifte p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,...'); 
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}

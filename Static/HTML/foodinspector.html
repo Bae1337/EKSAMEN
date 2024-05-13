@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Inspector</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/foodinspector.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <script src="/JS/FoodInspector.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+    
+    <div id="krop">
+        <div id="top" style="grid-area: top;">
+            <div class="søgefelt">
+                <input type="text" id="søg" placeholder="Søg efter madvare">
+                <button id="søg-button" class="søg-button" onclick="HentMadData()">Søg</button>
+                <div id="dropdown" class="dropdown-box"></div>
+            </div>
+            <div id="topOverskrift">
+                <h3 id="overskrift">Søg efter Fødevare</h3>
+            </div>
+            <div id="topUnderskrift">
+                <p id="produktid" class="borderS">Produkt id: </p>
+                <p id="taxa" class="borderS">Taxanomisk gruppe: </p>
+                <p id="fødevaregruppe" class="borderS">Fødevare Gruppe: </p>
+            </div>
+        </div>
+
+        <div id="left" style="grid-area: left;">
+            <div id="leftOverskrift">
+                <h3>Nutrition</h3>
+            </div>
+            <div id="leftUnder">
+                <div class="spec">
+                    <p id="energiKj">Energi(kJ): </p>
+                    <p id="test"></p>
+                </div>
+                <div class="spec">
+                    <p id="energiKcal">Energi(kcal)</p>
+                </div>
+                <div class="spec">
+                    <p id="protein">Protein(g): </p>
+                </div>
+                <div class="spec">
+                    <p id="kostfibre">Kostfibre(g): </p>
+                </div>
+                <div class="spec">
+                    <p id="fedt">Fedt(g): </p>
+                </div>
+                <div class="spec">
+                    <p id="kulhydrat">Kulhydrat(g): </p>
+                </div>
+                <div class="spec">
+                    <p id="vand">Vand(g): </p>
+                </div>
+                <div class="spec">
+                    <p id="tørstof">Dry matter(g): </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="right" style="grid-area: right;">
+            <div id="rightOverskrift">
+                <h3>Product Image</h3>
+            </div>
+            <div id="imgDiv">
+                <p id="load">Loading...</p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>

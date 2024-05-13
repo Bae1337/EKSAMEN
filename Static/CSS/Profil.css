@@ -1,0 +1,39 @@
+#profilBox {
+    background-color: #DEF6D8; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    padding: 20px;
+    width: 90%; 
+    max-width: 500px; 
+    margin-top: 50px;
+}
+
+#profilBrugerInput {
+    margin-bottom: 20px; 
+}
+
+input, select {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 8px; 
+    margin-bottom: 8px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%; 
+    border-radius: 4px; 
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background-color: #45a049; 
+}

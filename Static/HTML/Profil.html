@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/JS/Profil.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/CSS/Profil.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <title>Profil</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+
+    <div id="profilBox">
+        <p>Profil:</p>
+        <div id="profilBrugerInput">
+            <input type="text" id="profilBrugernavn" placeholder="Brugernavn">
+            <select id="profilKøn">
+                <option value="Mand">Mand</option>
+                <option value="Kvinde">Kvinde</option>
+            </select>
+            <input type="number" id="profilAlder" placeholder="Alder">
+            <input type="number" id="profilVægt" placeholder="Vægt">
+            <input type="number" id="profilHøjde" placeholder="Højde">
+            <p id="profilTextBox"></p>
+    </div>
+        <div id="opdaterProfil">
+            <button onclick="opdaterBruger()">Opdater Profil</button>
+            <button onclick="sletBruger()">Slet Profil</button>
+            <button onclick="logud()">Log ud</button>
+        </div>
+    </div>
+</body>
+</html>

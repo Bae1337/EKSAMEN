@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Creator</title>
+    <script src="/JS/registerEnkeltIngrediens.js"></script>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/registerEnkeltIngrediens.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+
+    <div id="tracker">
+        <div id="trackerOverskrift">
+            <h2>Registrer Indtaget Ingrediens</h2>
+            <button id="tilføj" class="button" onclick="registrerEnkeltIngrediens()">Tilføj</button>
+        </div>
+        <div id="tilføjMeal">
+            <input type="text" id="søg" placeholder="Søg efter madvare">
+            <div id="dropdown" class="dropdown-box"></div>
+            <input type="number" id="vægt" placeholder="Vægt (g)">
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

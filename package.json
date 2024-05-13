@@ -1,0 +1,35 @@
+{
+  "name": "eksamen",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "chai": "^5.1.0",
+    "chai-http": "^4.4.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "geolocation": "^0.0.0",
+    "init": "^0.1.2",
+    "mjs": "^1.0.0",
+    "morgan": "^1.10.0",
+    "mssql": "^10.0.2",
+    "node-geolocation": "^1.15.14",
+    "node-gpsd": "^0.3.4",
+    "superagent": "^9.0.2",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "@types/chai-http": "^4.2.0",
+    "mocha": "^10.4.0"
+  }
+}

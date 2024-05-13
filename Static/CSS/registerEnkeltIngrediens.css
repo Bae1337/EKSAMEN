@@ -1,0 +1,72 @@
+#tracker {
+    background-color: #DEF6D8;
+    border: 2px solid #91C789;
+    border-radius: 15px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    margin: 50px auto;
+}
+
+#tilføj {
+    background-color: #91C789;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#tilføj:hover {
+    background-color: #7fa978;
+}
+
+#trackerOverskrift {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+#tilføjMeal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 2px solid #91C789;
+    border-radius: 5px;
+}
+
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    width: 40%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+    top: 85%;
+    margin-left: 35px;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-box div {
+    padding: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dropdown-box div:hover {
+    background-color: #f4f4f4;
+}

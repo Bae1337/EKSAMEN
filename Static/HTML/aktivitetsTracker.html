@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/JS/AktivitetsTracker.js"></script>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/aktivitetsTracker.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <title>Activity Tracker</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+
+    <div id="Krop">
+        <div id="aktivitet">
+            <label for="aktivitetsSelector">Aktivitet:</label>
+            <select id="aktivitetsSelector">
+                <option value="215">Almindelig gang</option>
+                <option value="414">Gang ned af trapper</option>
+                <option value="1079">Gang op af trapper</option>
+                <option value="281">Slå græs med manuel græsslåmaskine</option>
+                <option value="236">Lave mad og redde senge</option>
+                <option value="362">Luge ukrudt</option>
+                <option value="481">Rydde sne</option>
+                <option value="74">Læse eller se TV</option>
+                <option value="89">Stå oprejst</option>
+                <option value="310">Cykling i roligt tempo</option>
+                <option value="163">Tørre støv af</option>
+                <option value="281">Vaske gulv</option>
+                <option value="259">Pudse vinduer</option>
+                <option value="814">Cardio</option>
+                <option value="348">Hård styrketræning</option>
+                <option value="318">Badminton</option>
+                <option value="318">Volleyball</option>
+                <option value="236">Bordtennis</option>
+                <option value="355">Dans i højt tempo</option>
+                <option value="259">Dans i moderat tempo</option>
+                <option value="510">Fodbold</option>
+                <option value="384">Rask gang</option>
+                <option value="244">Golf</option>
+                <option value="466">Håndbold</option>
+                <option value="466">Squash</option>
+                <option value="666">Jogging</option>
+                <option value="405">Langrend</option>
+                <option value="872">Løb i moderat tempo</option>
+                <option value="1213">Løb i hurtigt tempo</option>
+                <option value="414">Ridning</option>
+                <option value="273">Skøjteløb</option>
+                <option value="296">Svømning</option>
+                <option value="658">Cykling i højt tempo</option>
+                <option value="259">Bilreparation</option>
+                <option value="414">Gravearbejde</option>
+                <option value="236">Landbrugsarbejde</option>
+                <option value="185">Let kontorarbejde</option>
+                <option value="215">Male hus</option>
+                <option value="207">Murerarbejde</option>
+                <option value="1168">Hugge og slæbe på brænde</option>
+            </select>
+            <input type="number" id="tid" placeholder="Tid (m)">
+            <button class="button" onclick="registrerAktivitet()">Registrer Aktivitet</button>
+            <p id="tekstForResultat">Forbrændt Kcal: </p>
+            <input type="number" id="resultat" disabled>
+            <p id="resultatTekst"></p>
+        </div>
+
+        <div id="basalstofskifte">
+            <p>Dit Basalstofskifte (MJ): </p>
+            <input type="number" id="basalstofskifteIndput" placeholder="Basalstofskifte" disabled>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/JS/logind.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/CSS/logind.css">
+    <title>Logind</title>
+</head>
+<body>
+    <div id="logo">
+        <img src="/Billeder/logo.png" alt="Logo">
+    </div>
+    <div id="LogindBox">
+        <p>Log ind:</p>
+        <div id="logindInput">
+            <input type="text" id="logIndBrugernavn" placeholder="Brugernavn">
+            <input type="password" id="logIndKodeord" placeholder="Kodeord">
+            <p id="logindFejl"></p>
+        </div>
+        <div id="logindKnap">
+            <button onclick="logind()">Log ind</button>
+        </div>
+    </div>
+
+    <div id="tilføjBrugerBox">
+        <p>Tilføj bruger:</p>
+        <div id="tilføjBrugerInput">
+            <input type="text" id="tilføjBrugernavn" placeholder="Brugernavn">
+            <input type="password" id="tilføjKodeord" placeholder="Kodeord">
+            <select id="tilføjKøn">
+                <option value="Mand">Mand</option>
+                <option value="Kvinde">Kvinde</option>
+            </select>
+            <input type="number" id="tilføjAlder" placeholder="Alder">
+            <input type="number" id="tilføjVægt" placeholder="Vægt">
+            <input type="number" id="tilføjHøjde" placeholder="Højde">
+            <p id="tilføjTextBox"></p>
+    </div>
+        <div id="tilføjBrugerKnap">
+            <button onclick="tilføjBruger()">Tilføj bruger</button>
+        </div>
+    </div>
+</body>
+</html>

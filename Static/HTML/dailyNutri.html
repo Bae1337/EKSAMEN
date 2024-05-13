@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Nutri</title>
+    <script src="/JS/DailyNutri.js"></script>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/dailyNutri.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/Billeder/logo.png" alt="Logo">
+        </div>
+        <div id="links">
+            <a href="/">Daily Nutri</a>
+            <a href="/MealCreator">Meal Creator</a>
+            <a href="/MealTracker">Meal Tracker</a>
+            <a href="/AktivitetsTracker">Aktivitets Tracker</a>
+            <a href="/profil">Profil</a>
+        </div>
+    </header>
+
+    <div id="krop">
+        <div id="overskrift">
+            <div>
+                <h1>Daily Nutri</h1>
+            </div>
+            <div>
+                <select name="visningSelector" id="visningSelector">
+                    <option value="1" selected>Sidste 24 Timer</option>
+                    <option value="2">Sidste Måned</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div id="table">
+            <table id="DailyNutriTable">
+                <thead>
+                    <th>Tid</th>
+                    <th>Kcal Indtaget</th>
+                    <th>Drukket Vand(ml)</th>
+                    <th>Forbrændt(kcal)</th>
+                    <th>Kcal overskud/underskud</th>
+                </thead>
+            </table>
+            
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
